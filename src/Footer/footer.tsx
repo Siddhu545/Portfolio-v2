@@ -1,12 +1,13 @@
 import React from "react";
+import "./footer.css";
 
 function Footer() {
   return (
     <div className="footer-menu">
       <li>Instagram</li>
       <li>Github</li>
-      <li>twitter</li>
-      <li>Linkdin</li>
+      <li>Twitter</li>
+      <li>LinkedIn</li>
     </div>
   );
 }

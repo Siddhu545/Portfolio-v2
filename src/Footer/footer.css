@@ -1,0 +1,24 @@
+/* footer.scss */
+
+.footer-menu {
+  position: fixed;
+  bottom: 1rem; /* Adjust the distance from the bottom in rem units */
+  right: 1rem; /* Adjust the distance from the right in rem units */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  list-style: none;
+  padding: 1rem;
+
+  li {
+    margin-bottom: 0.5rem; /* Adjust the spacing between items in rem units */
+    color: #333; /* Text color */
+    font-size: 1rem; /* Adjust font size in rem units */
+    cursor: pointer;
+    margin: 0.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

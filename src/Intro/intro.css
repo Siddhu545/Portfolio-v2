@@ -1,0 +1,24 @@
+/* intro.scss */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .left-partition {
+    width: 30%; /* Adjust the width according to your design */
+    padding: 1.25rem; /* 20px in rem units */
+    background-color: #f2f2f2; /* Background color for the left partition */
+
+    .introduction {
+      font-size: 1rem; /* 16px in rem units */
+      line-height: 1.5;
+      color: #333; /* Text color */
+    }
+  }
+
+  .image {
+    /* Add your image styling properties here */
+  }
+}

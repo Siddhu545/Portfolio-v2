@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Intro from "./Intro/Intro.tsx";
 import { Routes, Route } from "react-router-dom";
 import Projects from "./Projects/projects.tsx";

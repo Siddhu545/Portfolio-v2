@@ -7,9 +7,12 @@ function Intro() {
   return (
     <div className="intro">
       <Header />
-      <div>Left Partition</div>
-      <div>Image</div>
-      <div>social media footer</div>
+      <div className="left-partition">
+        <div className="introduction">
+          <p>This is a small introduction text.</p>
+        </div>
+      </div>
+      <div className="image"></div>
       <Footer />
     </div>
   );
