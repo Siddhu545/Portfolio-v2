@@ -2,11 +2,11 @@
 
 .footer-menu {
   position: fixed;
-  bottom: 1rem; /* Adjust the distance from the bottom in rem units */
-  right: 1rem; /* Adjust the distance from the right in rem units */
+  bottom: 0.1rem; /* Adjust the distance from the bottom in rem units */
+  left: 1rem; /* Adjust the distance from the right in rem units */
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: flex-start;
   list-style: none;
   padding: 1rem;
 

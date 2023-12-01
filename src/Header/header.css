@@ -1,8 +1,6 @@
 /* header.scss */
 
 .header-menu {
-  background-color: #333;
-
   nav {
     display: flex;
     justify-content: center;

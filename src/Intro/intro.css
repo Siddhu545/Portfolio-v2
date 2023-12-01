@@ -4,21 +4,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-
   .left-partition {
-    width: 30%; /* Adjust the width according to your design */
+    position: absolute;
+    left: 3rem;
+    top: 12rem; /* Adjust the top position according to your design */
+    width: 50%;
+    height: 30%;
     padding: 1.25rem; /* 20px in rem units */
-    background-color: #f2f2f2; /* Background color for the left partition */
 
     .introduction {
-      font-size: 1rem; /* 16px in rem units */
-      line-height: 1.5;
-      color: #333; /* Text color */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .hello-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+
+      .name-text {
+        font-size: 3.125rem; /* Larger font size for the name */
+        margin-bottom: 10px;
+      }
+
+      .about-me-text {
+        font-size: 1.2rem; /* Medium font size for about me text */
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .cv-button {
+        display: inline-block;
+        padding: 0.063rem 1.25rem;
+        background-color: #555; 
+        color: #fff; 
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 0.313rem; 
+
+        &:hover {
+          background-color: blue
+        }
+      }
     }
   }
 
   .image {
-    /* Add your image styling properties here */
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    width: 40%;
+    height: 30%;
+    padding: 1.25rem;
   }
 }
