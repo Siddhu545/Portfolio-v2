@@ -34,16 +34,28 @@
       }
 
       .cv-button {
-        display: inline-block;
-        padding: 0.063rem 1.25rem;
-        background-color: #555; 
-        color: #fff; 
+        box-sizing: border-box;
+        appearance: none;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 0.2em;
+        color:#ffffff;
+        cursor: pointer;
+        font-size: 0.8rem;
+        padding: 0.8em;
         text-decoration: none;
-        font-size: 1rem;
-        border-radius: 0.313rem; 
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
         &:hover {
-          background-color: blue
+          background-color: blue;
+          color:#000000;
+        }
+        &:hover {
+          box-shadow: 0 0 40px 40px #3498db inset;
         }
       }
     }

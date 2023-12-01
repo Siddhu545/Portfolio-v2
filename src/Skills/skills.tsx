@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header/header.tsx"; // Assuming it's a CSS file
 import Footer from "../Footer/footer.tsx"; // Assuming it's a CSS file
 import "./skills.css"; // Your Skills component CSS file
+import { Link } from "react-router-dom";
 
 function Skills() {
   return (
@@ -29,14 +30,16 @@ function Skills() {
                 {/* Your sign goes here */}
                 <p>Your sign details</p>
               </div>
-              <p className="contact-button">Contact Me</p>
+              <Link to="/contact" className="contact-button">
+                Contact Me
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
       <div className="skills-section">
-          <h2 className="skill-text">Skills</h2>
+        <h2 className="skill-text">Skills</h2>
         <div className="skill-set">
           <div className="skill-pair">
             <div>
