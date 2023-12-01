@@ -34,6 +34,14 @@ function Header() {
           </li>
           <li>
             <Link
+              to="/resume"
+              className={location.pathname === "/resume" ? "active" : ""}
+            >
+             Resume
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/blog"
               className={location.pathname === "/blog" ? "active" : ""}
             >

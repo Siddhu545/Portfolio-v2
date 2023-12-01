@@ -4,10 +4,10 @@ import "./footer.css";
 function Footer() {
   return (
     <div className="footer-menu">
-      <li>Instagram</li>
+      <li>LinkedIn</li>
       <li>Github</li>
       <li>Twitter</li>
-      <li>LinkedIn</li>
+      <li>Instagram</li>
     </div>
   );
 }

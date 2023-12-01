@@ -17,7 +17,7 @@ function Skills() {
 
         <div className="right-section">
           <div className="about-me">
-            <h2>About Me</h2>
+            <h2 className="about-me-text">About Me</h2>
             <p>
               making it look like readable English. Many desktop publishing
               packages and web page editors now use Lorem Ipsum as their default
@@ -39,7 +39,7 @@ function Skills() {
       </div>
 
       <div className="skills-section">
-        <h2 className="skill-text">Skills</h2>
+        <h2 className="skill-text">My Skills</h2>
         <div className="skill-set">
           <div className="skill-pair">
             <div>

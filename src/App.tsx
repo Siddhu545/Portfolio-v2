@@ -5,6 +5,7 @@ import Projects from "./Projects/projects.tsx";
 import Skills from "./Skills/skills.tsx";
 import Blog from "./Blog/blog.tsx";
 import Contact from "./Contact/contact.tsx";
+import Resume from "./Resume/resume.tsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="Projects" element={<Projects />} />
+        <Route path="Resume" element={<Resume />} />
         <Route path="Skills" element={<Skills />} />
         <Route path="Blog" element={<Blog />} />
         <Route path="Contact" element={<Contact />} />
