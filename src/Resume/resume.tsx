@@ -4,11 +4,11 @@ import Footer from "../Footer/footer.tsx";
 
 function Resume() {
   return (
-    <div className="projects">
+    <>
       <Header />
-      HEllow Resume
+      <div className="projects">HEllow Resume</div>
       <Footer />
-    </div>
+    </>
   );
 }
 
