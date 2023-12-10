@@ -37,11 +37,11 @@
         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
         &:hover {
-          background-color: rgb(241, 170, 76);
+          background-color: chocolate;
           color: #000000;
         }
         &:hover {
-          box-shadow: 0 0 40px 40px rgb(241, 170, 76) inset;
+          box-shadow: 0 0 40px 40px chocolate inset;
         }
       }
     }
@@ -52,7 +52,7 @@
     align-items: center;
     text-align: center;
     .skill-text {
-      color: rgb(241, 170, 76);
+      color:chocolate;
     }
   }
 
@@ -65,7 +65,7 @@
   .skill-pair {
     display: flex;
     margin-bottom: 0.3rem;
-    color: rgb(241, 170, 76);
+    color: chocolate;
   }
 
   progress {

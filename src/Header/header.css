@@ -19,7 +19,6 @@
 
   a {
     text-decoration: none;
-    color: white;
     font-weight: bold;
     font-size: 1rem; /* Adjust font size using rem units */
     position: relative;
@@ -27,7 +26,6 @@
 
   /* Style for the active link */
   a.active {
-    color: #ffcc00; /* Color for the active link */
-    border-bottom: 0.2rem solid #ffcc00; /* Underline effect for the active link using rem units */
+    color: chocolate; /* Color for the active link */
   }
 }

@@ -10,7 +10,7 @@
 
 .project-cards {
   display: grid;
-  grid-template-columns:auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 20px;
   justify-content: center;
 }
@@ -22,8 +22,11 @@
   padding: 10px;
   margin: 10px;
   transition: border-bottom 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .project-card:hover {
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid chocolate;
+  transform: rotateY(360deg);
 }

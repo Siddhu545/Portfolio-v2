@@ -1,0 +1,92 @@
+.contact {
+  display: flex;
+  flex-direction: column; /* Change to column on small screens */
+  align-items: center;
+  justify-content: center;
+
+  .left-partition {
+    margin: 2rem; /* Combine margin properties */
+    width: 100%; /* Take full width on small screens */
+    padding: 1.25rem;
+
+    .message-one {
+      font-size: 35px;
+
+      .message-two {
+        color: chocolate;
+      }
+    }
+
+    .details {
+      font-size: 20px;
+      color: chocolate;
+    }
+  }
+
+  .right-partition {
+    margin: 3rem 0; /* Combine margin properties */
+    width: 100%; /* Take full width on small screens */
+    padding: 1.25rem;
+
+    .inputbox {
+      border: 1px solid chocolate;
+      padding: 0.438rem;
+
+      input {
+        width: 100%; /* Take full width of the container */
+        padding: 0.625rem;
+        box-sizing: border-box;
+        background-color: #00000009;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid chocolate;
+      }
+
+      label {
+        margin-bottom: 0.313rem;
+        padding: 0.625rem;
+      }
+
+      .hire-me-button {
+        margin: 0.625rem 0; /* Add margin-bottom */
+        width: 100%; /* Take full width of the container */
+        box-sizing: border-box;
+        appearance: none;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 0.2em;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 0.8rem;
+        padding: 0.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+        &:hover {
+          background-color: chocolate;
+          color: #000000;
+          box-shadow: 0 0 40px 40px chocolate inset;
+        }
+      }
+    }
+  }
+}
+
+/* Media query for small screens */
+@media (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    
+    .left-partition {
+      width: 50%;
+    }
+
+    .right-partition {
+      width: 40%;
+    }
+  }
+}

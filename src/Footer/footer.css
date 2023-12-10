@@ -1,24 +1,24 @@
-/* footer.scss */
-
 .footer-menu {
-  position: fixed;
-  bottom: 0.1rem; /* Adjust the distance from the bottom in rem units */
-  left: 1rem; /* Adjust the distance from the right in rem units */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   list-style: none;
   padding: 1rem;
+  margin-left: 1rem; /* Adjust the distance from the left in rem units */
+}
 
-  li {
-    margin-bottom: 0.5rem; /* Adjust the spacing between items in rem units */
-    color: #333; /* Text color */
-    font-size: 1rem; /* Adjust font size in rem units */
-    cursor: pointer;
-    margin: 0.5rem;
+.footer-menu li {
+  margin-bottom: 0.5rem; /* Adjust the spacing between items in rem units */
+  color: #333; /* Text color */
+  font-size: 1rem; /* Adjust font size in rem units */
+  cursor: pointer;
+  margin-right: 0.5rem; /* Adjust the spacing between items in rem units */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+    color: chocolate;
   }
 }
+
+

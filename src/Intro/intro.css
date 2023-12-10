@@ -2,15 +2,13 @@
 
 .intro {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   .left-partition {
-    position: absolute;
-    left: 3rem;
-    top: 12rem; /* Adjust the top position according to your design */
+    margin-left: 3rem;
+    margin-top: 2rem;
     width: 50%;
-    height: 30%;
-    padding: 1.25rem; /* 20px in rem units */
+    padding: 1.25rem;
 
     .introduction {
       display: flex;
@@ -39,34 +37,32 @@
         background-color: transparent;
         border: 1px solid #ffffff;
         border-radius: 0.2em;
-        color:#ffffff;
+        color: #ffffff;
         cursor: pointer;
         font-size: 0.8rem;
         padding: 0.8em;
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 500;
         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
         &:hover {
-          background-color: rgb(241, 170, 76);
-          color:#000000;
+          background-color: chocolate;
+          color: #000000;
         }
         &:hover {
-          box-shadow: 0 0 40px 40px rgb(241, 170, 76) inset;
+          box-shadow: 0 0 40px 40px chocolate inset;
         }
       }
     }
   }
 
   .image {
-    position: absolute;
-    right: 3rem;
-    top: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
     width: 40%;
-    height: 30%;
     padding: 1.25rem;
   }
 }
