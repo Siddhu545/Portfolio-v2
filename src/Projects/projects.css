@@ -1,6 +1,7 @@
 /* Projects.css */
 
 .projects {
+  font-family: 'Rethink Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;

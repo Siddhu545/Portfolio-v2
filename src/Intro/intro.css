@@ -1,6 +1,7 @@
 /* intro.scss */
 
 .intro {
+  font-family: 'Rethink Sans', sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;

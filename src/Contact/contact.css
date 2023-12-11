@@ -1,4 +1,5 @@
 .contact {
+  font-family: 'Rethink Sans', sans-serif;
   display: flex;
   flex-direction: column; /* Change to column on small screens */
   align-items: center;
@@ -33,8 +34,9 @@
       padding: 0.438rem;
 
       input {
-        width: 100%; /* Take full width of the container */
+        width: 95%; /* Take full width of the container */
         padding: 0.625rem;
+        margin: 0.313rem; 
         box-sizing: border-box;
         background-color: #00000009;
         outline: none;
@@ -43,7 +45,7 @@
       }
 
       label {
-        margin-bottom: 0.313rem;
+        margin-bottom: 0.313rem;/* Add top margin */
         padding: 0.625rem;
       }
 

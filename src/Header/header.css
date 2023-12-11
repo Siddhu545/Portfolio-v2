@@ -1,6 +1,8 @@
 /* header.scss */
 
 .header-menu {
+  font-family: 'Rethink Sans', sans-serif; /* Replace 'Your Desired Font' with the actual font name */
+  
   nav {
     display: flex;
     justify-content: center;

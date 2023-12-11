@@ -1,4 +1,5 @@
 .footer-menu {
+  font-family: "Rethink Sans", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -20,5 +21,3 @@
     color: chocolate;
   }
 }
-
-
