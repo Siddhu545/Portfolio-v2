@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Header from "../Header/header.tsx";
 import Footer from "../Footer/footer.tsx";
 import "./contact.css";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -32,13 +34,12 @@ function Contact() {
       });
 
       if (response.ok) {
-        console.log("API call successful");
-        // You can add further actions here if needed
+        toast.success("Form submitted successfully!");
       } else {
-        console.error("API call failed");
+        toast.error("Failed to submit form. Please try again.");
       }
     } catch (error) {
-      console.error("Error during API call:", error);
+      toast.error("An error occurred. Please try again later.");
     }
   };
 

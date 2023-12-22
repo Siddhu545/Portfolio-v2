@@ -3,6 +3,8 @@ import "./intro.css";
 import Header from "../Header/header.tsx";
 import Footer from "../Footer/footer.tsx";
 import axios from "axios";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 function Intro() {
   const resumeUrl = "http://localhost:5000/download";
@@ -24,7 +26,7 @@ function Intro() {
         document.body.removeChild(link);
       })
       .catch((error) => {
-        console.error("Error downloading resume:", error);
+        toast.error("An error occurred. Please try again later.");
       });
   };
 
@@ -35,7 +37,7 @@ function Intro() {
         <div className="left-partition">
           <div className="introduction">
             <div className="hello-text">
-              <span>-HELLO</span>
+              <span>- HELLO</span>
             </div>
             <div className="name-text">
               <span>I'm Siddharth Khengare</span>

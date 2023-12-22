@@ -6,28 +6,68 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  min-height: 100vh;
+  padding: 20px;
 }
 
 .project-cards {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
 }
 
 .project-card {
-  width: 200px;
-  height: 150px;
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
-  transition: border-bottom 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform-style: preserve-3d;
   perspective: 1000px;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.4;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.project-card .description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .project-card:hover {
+  width: 500px;
   border-bottom: 3px solid chocolate;
-  transform: rotateY(360deg);
 }
+
+.project-card:hover .description {
+  max-height: 200px;
+}
+
+.project-card strong {
+  font-weight: bold;
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Add additional styles as needed */

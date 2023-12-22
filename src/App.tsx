@@ -6,10 +6,12 @@ import Skills from "./Skills/skills.tsx";
 import Blog from "./Blog/blog.tsx";
 import Contact from "./Contact/contact.tsx";
 import Resume from "./Resume/resume.tsx";
+import { toast, ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="Projects" element={<Projects />} />

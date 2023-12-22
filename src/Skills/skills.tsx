@@ -49,21 +49,21 @@ function Skills() {
                 <progress value={0.7}></progress>
               </div>
               <div>
-                <p>JavaScript</p>
-                <progress value={0.5}></progress>
+                <p>React-Native</p>
+                <progress value={0.6}></progress>
               </div>
               <div>
                 <p>JavaScript</p>
-                <progress value={0.5}></progress>
+                <progress value={0.7}></progress>
               </div>
             </div>
             <div className="skill-pair">
               <div>
                 <p>Python</p>
-                <progress value={0.8}></progress>
+                <progress value={0.7}></progress>
               </div>
               <div>
-                <p>MongoDB</p>
+                <p>DynamoDB</p>
                 <progress value={0.6}></progress>
               </div>
             </div>
