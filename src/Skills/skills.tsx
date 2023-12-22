@@ -42,30 +42,51 @@ function Skills() {
 
         <div className="skills-section">
           <h2 className="skill-text">My Skills</h2>
-          <div className="skill-set">
-            <div className="skill-pair">
-              <div>
-                <p>React</p>
-                <progress value={0.7}></progress>
-              </div>
-              <div>
-                <p>React-Native</p>
-                <progress value={0.6}></progress>
-              </div>
-              <div>
-                <p>JavaScript</p>
-                <progress value={0.7}></progress>
-              </div>
+          <div className="skill-cards">
+            {/* Frontend Card */}
+            <div className="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>React-Native</li>
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+
+                {/* Add more frontend skills as needed */}
+              </ul>
             </div>
-            <div className="skill-pair">
-              <div>
-                <p>Python</p>
-                <progress value={0.7}></progress>
-              </div>
-              <div>
-                <p>DynamoDB</p>
-                <progress value={0.6}></progress>
-              </div>
+
+            {/* Backend Card */}
+            <div className="skill-card">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Python Flask</li>
+                <li>Express JS</li>
+                {/* Add more backend skills as needed */}
+              </ul>
+            </div>
+
+            {/* Database Card */}
+            <div className="skill-card">
+              <h3>Database</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>DynamoDB</li>
+                {/* Add more database skills as needed */}
+              </ul>
+            </div>
+
+            {/* Others Card */}
+            <div className="skill-card">
+              <h3>Others</h3>
+              <ul>
+                <li>Git</li>
+                <li>RESTful APIs</li>
+                <li>AWS</li>
+                {/* Add more skills in the "Others" category */}
+              </ul>
             </div>
           </div>
         </div>

@@ -52,24 +52,49 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
     .skill-text {
-      color:chocolate;
+      color: chocolate;
     }
   }
 
-  .skill-set {
-    flex: 1;
+  .skill-cards {
     display: flex;
-    flex-direction: column;
   }
 
-  .skill-pair {
-    display: flex;
-    margin-bottom: 0.3rem;
-    color: chocolate;
+  .skill-card {
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    overflow: hidden;
   }
 
-  progress {
-    width: 80%;
+  .skill-card:hover {
+    border-bottom: 3px solid chocolate;
+  }
+
+  .skill-card:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skill-card li {
+    margin-bottom: 5px;
   }
 }

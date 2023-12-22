@@ -51,7 +51,6 @@ function Projects() {
               key={project.id}
               className={`project-card ${hoveredProject === project.id ? "expanded" : ""}`}
               onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
             >
               <h3>{project.title}</h3>
               {hoveredProject === project.id && (
